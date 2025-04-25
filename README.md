@@ -2,7 +2,10 @@
 
 ![Build](https://github.com/Nerd-coderZero/secure-file-sharing/actions/workflows/ci-cd.yml/badge.svg?branch=main)
 
-A secure REST API-based file-sharing system built with FastAPI that supports role-based access control and secure file downloads using encrypted URLs.
+[![Build Status](https://github.com/Nerd-coderZero/secure-file-sharing/actions/workflows/ci-cd.yml/badge.svg?branch=main)](https://github.com/Nerd-coderZero/secure-file-sharing/actions)
+
+
+A secure REST API-based file-sharing system built with FastAPI, created as a backend assignment for EZ's internship process. It supports role-based access control, encrypted downloads, and secure file sharing between users.
 
 ## Features
 
@@ -128,6 +131,14 @@ pytest
    - Then upload files as Operations user
    - Switch to Client user login
    - List files and generate download links
+  
+### Postman Collection
+
+A ready-to-use Postman collection file is included in the root of the repository as:
+
+"EZ_Backend_Assignment_KushagraJaiswal.postman_collection.json"
+
+You can use it to run all test scenarios including signup, email verification, file uploads, and secure downloads.
 
 ## Deployment
 
