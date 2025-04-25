@@ -146,6 +146,8 @@ The project includes Docker configuration and a GitHub Actions CI/CD workflow fo
 2. If tests pass, a Docker image is built and pushed
 3. The application is deployed to the configured server
 
+**Note**: Minor development tweaks were made (e.g., `conftest.py`, config.py, test database setup) to support CI/CD integration on GitHub. These changes do not affect local execution and are isolated to improve automated testing and deployment reliability.
+
 ### Production Considerations
 
 - Use a proper database (PostgreSQL recommended)
