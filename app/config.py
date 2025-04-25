@@ -26,4 +26,8 @@ class Settings(BaseSettings):
     # File uploads
     MAX_UPLOAD_SIZE: int = 5 * 1024 * 1024  # 5MB
 
-settings = Settings()
+# At the bottom of config.py, replace:
+# settings = Settings()
+# With:
+def get_settings() -> Settings:
+    return Settings()
