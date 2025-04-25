@@ -1,6 +1,6 @@
 # Secure File-Sharing System
 
-![Build](https://github.com/Nerd-coderZero/secure-file-sharing/actions/workflows/ci-cd.yml/badge.svg)
+![Build](https://github.com/Nerd-coderZero/secure-file-sharing/actions/workflows/ci-cd.yml/badge.svg?branch=main)
 
 A secure REST API-based file-sharing system built with FastAPI that supports role-based access control and secure file downloads using encrypted URLs.
 
