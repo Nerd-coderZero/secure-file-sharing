@@ -1,7 +1,5 @@
 # Secure File-Sharing System
 
-![Build](https://github.com/Nerd-coderZero/secure-file-sharing/actions/workflows/ci-cd.yml/badge.svg?branch=main)
-
 [![Build Status](https://github.com/Nerd-coderZero/secure-file-sharing/actions/workflows/ci-cd.yml/badge.svg?branch=main)](https://github.com/Nerd-coderZero/secure-file-sharing/actions)
 
 
