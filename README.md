@@ -46,7 +46,7 @@ A secure REST API-based file-sharing system built with FastAPI that supports rol
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/secure-file-sharing.git
+   git clone https://github.com/Nerd-coderZero/secure-file-sharing.git
    cd secure-file-sharing
    ```
 
