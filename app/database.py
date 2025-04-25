@@ -1,28 +1,23 @@
 # app/database.py
-import os
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from dotenv import load_dotenv
+from app.config import get_settings
 
-load_dotenv()
+settings = get_settings()
 
-# Check if we're running tests
-TESTING = os.environ.get("TESTING", "False").lower() == "true"
+# Create database engine
+engine = create_engine(
+    settings.DATABASE_URL
+)
 
-# Use a test database during tests or the main database in normal operation
-if TESTING:
-    SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
-    engine = create_engine(
-        SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
-    )
-else:
-    SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL")
-    engine = create_engine(SQLALCHEMY_DATABASE_URL)
-
+# Create session factory
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+# Create base class for models
 Base = declarative_base()
 
+# Create dependency for database session
 def get_db():
     db = SessionLocal()
     try:
